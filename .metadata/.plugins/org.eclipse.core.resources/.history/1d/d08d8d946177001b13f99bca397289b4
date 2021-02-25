@@ -1,0 +1,10 @@
+import java.util.Comparator;
+
+public class ListComparatorByName implements Comparator<Merchandize> {
+
+	@Override
+	public boolean compare(Merchandize obj0, Merchandize obj1) {
+		return obj0.getItemCode().before(obj1.getItemCode());
+	}
+
+}

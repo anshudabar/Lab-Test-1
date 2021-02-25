@@ -1,0 +1,6 @@
+
+public class Merchandize {
+	private String itemCode;
+	private int quantity;
+	private double unitPrice;
+}

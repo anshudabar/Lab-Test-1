@@ -1,0 +1,39 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class MerchandizeTester {
+	public static void main(String[] args) {
+		 String itemCode;
+		 int quantity;
+		 double unitPrice;
+		 List<Merchandize> allMerchandise=new ArrayList<>();
+
+		String line=null;
+		try (BufferedReader br = new BufferedReader(new FileReader(new File("C:\\Users\\ve00ym238\\Desktop\\ymslimachinetests\\lab_exam1_akanksha_tyagi_ym238\\src\\com\\ymsli\\record\\input.dat")))){
+			while((line=br.readLine())!=null) {
+				//i need to read all words of files
+				String []tokens=line.split(" ");
+				itemCode=tokens[0];
+				quantity=Integer.parseInt(tokens[1]);
+				unitPrice=Double.parseDouble(tokens[2]);
+				allMerchandise.add(new Merchandize(itemCode,quantity,unitPrice));
+				
+				
+			}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		allMerchandise.forEach((M)->System.out.println(M));
+
+	}
+
+}

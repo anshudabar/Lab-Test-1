@@ -1,0 +1,26 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+public class MerchandizeTester {
+	public static void main(String[] args) {
+	    try {
+	    	Set<Merchandize> input = new LinkedHashSet<Merchandize>();
+			List<Merchandize> list = new ArrayList<>();
+	    }
+	    
+	    catch (FileNotFoundException e) {
+            System.out.println("File is not found!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        System.out.println("Written into file successfully");
+	}
+}

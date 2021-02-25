@@ -1,0 +1,11 @@
+import java.util.Comparator;
+
+public class ListComparatorByName implements Comparator<Merchandize> {
+
+	@Override
+	public int compare(Merchandize obj0, Merchandize obj1) {
+		return obj0
+		return 0;
+	}
+
+}

@@ -1,0 +1,11 @@
+import java.util.Comparator;
+
+public class ListComparatorByName implements Comparator<Merchandize> {
+
+	@Override
+	public string compare(Merchandize obj0, Merchandize obj1) {
+		return obj0.getItemCode()obj0.before(obj1.getItemCode());
+		return 0;
+	}
+
+}
