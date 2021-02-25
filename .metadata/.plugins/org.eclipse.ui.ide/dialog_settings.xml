@@ -73,6 +73,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\ve00ym229\Documents\workspace-new\Q2"/>
 			<item value="C:\Users\ve00ym229\Documents\workspace-new\Question2"/>
 		</list>
 	</section>
