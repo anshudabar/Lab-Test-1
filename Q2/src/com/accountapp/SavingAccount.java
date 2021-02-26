@@ -32,9 +32,9 @@ public class SavingAccount extends Account {
 		float balance = getBalance() - amount;
 		if (balance > 0) {
 			setBalance(balance);
-			System.out.println("Withdrawl successful");
+			System.out.println("Successfull Transaction");
 		} else {
-			System.out.println("Unable to withdraw the amount!!!!");
+			System.out.println("Transaction failed");
 		}
 	}
 
